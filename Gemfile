@@ -5,13 +5,13 @@ ruby "2.3.0"
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
 gem "flutie"
-gem "high_voltage"
+# gem "high_voltage"
 gem "honeybadger"
 gem "jquery-rails"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "pg"
 gem "puma"
-gem "rack-canonical-host"
+# gem "rack-canonical-host"
 gem "rails", "~> 4.2.6"
 gem "sass-rails"
 gem "simple_form"
@@ -20,8 +20,12 @@ gem "sprockets-es6"
 gem "uglifier"
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'bootstrap_form'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
+gem 'font-awesome-rails'
 gem 'devise'
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', github:  'activeadmin'
 
 group :development do
   gem "quiet_assets"

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="ROBOTS" content="NOODP" />
-  <meta name="viewport" content="initial-scale=1" />
   <%#
     Configure default and controller-, and view-specific titles in
     config/locales/en.yml. For more see:
@@ -13,12 +15,22 @@
   <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body class="<%= body_class %>">
+
+
+  <%= render 'layouts/header' %>
+  <div id="flash">
+    <%= render 'layouts/messages' %>
+  </div>
   <%= render "flashes" -%>
+
+  <div class="container container-main m-b-lg">
+    <%= yield %>
+  </div>
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
-  <%= yield %>
   <%= render "javascript" %>
   <%= render "css_overrides" %>
 </body>
