@@ -192,6 +192,9 @@ GEM
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
+    rack-canonical-host (0.1.0)
+      addressable
+      rack (~> 1.0)
     rack-mini-profiler (0.9.9.2)
       rack (>= 1.2.0)
     rack-test (0.6.3)
@@ -334,6 +337,7 @@ DEPENDENCIES
   pry-rails
   puma
   quiet_assets
+  rack-canonical-host
   rack-mini-profiler
   rack-timeout
   rails (~> 4.2.6)
