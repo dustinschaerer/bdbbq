@@ -1,17 +1,24 @@
-<div id="main-nav">
-  <nav class="navbar navbar-full navbar-fixed-top affix-top navbar-light" style="background-color: #D92329;" data-spy="affix" data-offset-top="170">
+
+  <nav class="navbar navbar-full navbar-fixed-top affix-top navbar-light" style="background-color: #D92329;" data-spy="affix" data-offset-top="132" id="main-nav">
     <div class="container-fluid">
       <div class="row hidden-sm-down">
-        <a class="nav-link center-block navbar-brand" href="/" id="bdbbq-logo"><%= image_tag 'bdbbq-logo-200.png', class: "image_responsive" %></a>
-
-        <ul class="nav navbar-nav pull-right">
-          <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/menu">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="/">To-Go Orders</a></li>
-          <li class="nav-item"><a class="nav-link" href="/">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="/">Location</a></li>
-          <li class="nav-item"><a class="nav-link" href="/">Contact</a></li>
-        </ul>
+        <div class="col-sm-5">
+          <ul class="nav navbar-nav pull-left">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/to-go">To-Go Orders</a></li>
+            <li class="nav-item"><a class="nav-link" href="/specials">Specials</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <a class="nav-link center-block" href="/" id="bdbbq-logo"><%= image_tag 'bdbbq-logo-200.png', class: "center-block" %></a>
+        </div>
+        <div class="col-sm-5">
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item"><%= link_to "Menu", page_path('menu'), class: 'nav-link' %></li>
+            <li class="nav-item"><a class="nav-link" href="/location">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- Nav for small screens -->
@@ -40,6 +47,12 @@
     </div>
     <!-- /.container-fluid -->
     <!-- /.Nav for small screens -->
+    <!-- <div class="container-fluid header-text">
+      <div class="row">
+        <div class="col-xs-12">
+          11469 Old Nashville Hwy, Smyrna, TN 37167
+        </div>
+      </div>
+    </div> -->
   </nav>
 
-</div>

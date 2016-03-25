@@ -19,18 +19,23 @@
 <body class="<%= body_class %>">
 
 
-  <%= render 'layouts/header' %>
+  <%= render 'layouts/header2' %>
   <div id="flash">
     <%= render 'layouts/messages' %>
   </div>
   <%= render "flashes" -%>
 
-  <div class="container container-main m-b-lg">
+  <div class="container-fluid container-main">
+
     <%= yield %>
+
   </div>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <%= render 'layouts/footer' %>
+
+
+ <!--  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p> -->
   <%= render "javascript" %>
   <%= render "css_overrides" %>
 </body>

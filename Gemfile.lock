@@ -144,6 +144,7 @@ GEM
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     hashdiff (0.3.0)
+    high_voltage (2.4.0)
     honeybadger (2.5.3)
     i18n (0.7.0)
     inherited_resources (1.6.0)
@@ -323,6 +324,7 @@ DEPENDENCIES
   flutie
   font-awesome-rails
   formulaic
+  high_voltage
   honeybadger
   jquery-rails
   launchy
